@@ -14,7 +14,7 @@ export default class Home extends Component{
   static async initialData(){
     try {
       return {
-        ...(await axios.get('http://worldtimeapi.org/api/timezone/America/Argentina/Salta')).data,
+        ...(await axios.get('https://worldtimeapi.org/api/timezone/America/Argentina/Salta')).data,
         initialDataLoaded: true
       }
     } catch (e) {

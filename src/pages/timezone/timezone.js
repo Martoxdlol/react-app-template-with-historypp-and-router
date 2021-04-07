@@ -21,7 +21,7 @@ export default class Home extends Component{
   static async initialData(params){
     try {
       return {
-        ...(await axios.get('http://worldtimeapi.org/api/timezone/'+params.id)).data,
+        ...(await axios.get('https://worldtimeapi.org/api/timezone/'+params.id)).data,
         initialDataLoaded: true
       }
     } catch (e) {
